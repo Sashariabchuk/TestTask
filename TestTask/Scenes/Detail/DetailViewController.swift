@@ -10,6 +10,7 @@ import SDWebImage
 
 class DetailViewController: UIViewController {
     
+    @IBOutlet weak var idLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var dateLabel: UILabel!
     
@@ -18,6 +19,8 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        idLabel.text = viewModel?.cat?.id
+        
         imageView.sd_setImage(
             with: viewModel?.getCatImageURL(with: viewModel?.cat?.id),
             placeholderImage: UIImage(named: "photo"),
@@ -25,6 +28,7 @@ class DetailViewController: UIViewController {
             context: nil)
         
         dateLabel.text = viewModel?.getDate(from: viewModel?.cat?.createdAt)
+        
     }
     
 }

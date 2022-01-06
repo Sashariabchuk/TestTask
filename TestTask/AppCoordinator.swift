@@ -49,6 +49,8 @@ class AppCoordinator: Coordinator {
         detailViewController.viewModel = detailViewModel
         detailViewController.title = "Detail"
     
+        navigationController.navigationBar.prefersLargeTitles = false
+        
         navigationController.pushViewController(detailViewController, animated: true)
     }
 }
