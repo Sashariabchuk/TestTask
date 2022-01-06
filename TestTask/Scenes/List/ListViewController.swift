@@ -48,7 +48,7 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(cats[indexPath.row].id)
+        viewModel?.openDetail(with: cats[indexPath.row])
     }
     
 }

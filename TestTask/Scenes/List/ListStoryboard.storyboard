@@ -29,17 +29,17 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pc5-Bb-lk3">
-                                                    <rect key="frame" x="40" y="31" width="334" height="31"/>
+                                                    <rect key="frame" x="20" y="11" width="374" height="71"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="Pc5-Bb-lk3" secondAttribute="trailing" constant="20" id="2T5-mU-CEn"/>
-                                                <constraint firstItem="Pc5-Bb-lk3" firstAttribute="top" secondItem="Ixw-xo-VLf" secondAttribute="topMargin" constant="20" id="AA0-Fg-t6D"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Pc5-Bb-lk3" secondAttribute="bottom" constant="20" id="CDF-Cd-xTp"/>
-                                                <constraint firstItem="Pc5-Bb-lk3" firstAttribute="leading" secondItem="Ixw-xo-VLf" secondAttribute="leadingMargin" constant="20" id="Teh-yv-HWB"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Pc5-Bb-lk3" secondAttribute="trailing" id="2T5-mU-CEn"/>
+                                                <constraint firstItem="Pc5-Bb-lk3" firstAttribute="top" secondItem="Ixw-xo-VLf" secondAttribute="topMargin" id="AA0-Fg-t6D"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Pc5-Bb-lk3" secondAttribute="bottom" id="CDF-Cd-xTp"/>
+                                                <constraint firstItem="Pc5-Bb-lk3" firstAttribute="leading" secondItem="Ixw-xo-VLf" secondAttribute="leadingMargin" id="Teh-yv-HWB"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

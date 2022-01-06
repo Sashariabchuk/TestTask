@@ -6,18 +6,19 @@
 //
 
 import Foundation
+import UIKit
 
 protocol ListDelegate {
     func reload(with data: [Cats])
 }
 
 class ListViewModel {
-    weak var coordinator: AppCoordinator!
+    weak var coordinator: AppCoordinator?
     
     var delegate: ListDelegate?
     
-    func getDetail(of catID: String) {
-        
+    func openDetail(with cat: Cats) {
+        coordinator?.openDetail(with: cat)
     }
     
     func getCats() {
@@ -30,6 +31,6 @@ class ListViewModel {
                     print(error)
             }
         }
-
+        
     }
 }
